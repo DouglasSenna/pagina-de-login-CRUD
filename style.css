@@ -25,7 +25,7 @@ body {
 }
 
 form {
-  background-color: white;
+  background-color: rgb(241, 223, 206);
   align-items: center;
   display: flex;
   flex-direction: column;
@@ -69,6 +69,7 @@ label {
 input {
   outline: none;
   caret-color: #d15604;
+  background-color: rgb(240, 225, 211); ;
 }
 
 i {
