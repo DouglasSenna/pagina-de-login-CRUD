@@ -1,0 +1,60 @@
+#iwhats {
+  animation: vibrar 2s ease-in-out 3s infinite;
+  animation-duration: 3s;
+  animation-delay: 0s;
+}
+
+@keyframes vibrar {
+  0% {
+    transform: translate(0, 0);
+  }
+  10% {
+    transform: translateY(-25px);
+  }
+  20% {
+    transform: translate(0);
+  }
+  30% {
+    transform: translateY(-25px);
+  }
+  40% {
+    transform: translate(0);
+  }
+  50% {
+    transform: translate(0, 0);
+  }
+  60% {
+    transform: translate(0, 0);
+  }
+  70% {
+    transform: translate(0, 0);
+  }
+  80% {
+    transform: translate(0, 0);
+  }
+  90% {
+    transform: translate(0, 0);
+  }
+  100% {
+    transform: translate(0, 0);
+  }
+  
+}
+
+
+@keyframes girar {
+  0% {
+    transform: rotateX(0deg);
+  }
+  100% {
+    transform: rotateX(360deg);
+  }
+}
+
+.img-html:hover, 
+.img-css:hover, 
+.img-js:hover,
+button:hover {
+    animation: girar 2s linear infinite;
+}
+

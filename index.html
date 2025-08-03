@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Login</title>
+    <link rel="stylesheet" href="style.css" />
+    <!-- <link rel="stylesheet" href="./animacao.css"> -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Acme&family=Caprasimo&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <main class="container-principal">
+      <form class="form-cadastro" id="form-cadastro">
+        <h1 class="titulo">Cadastrar Usuário</h1>
+
+        <!-- usuario -->
+
+        <div class="content-name">
+          <label for="name">Nome</label>
+          <div class="input-name">
+            <i class="bi bi-person-circle"></i>
+            <input type="text" id="name" placeholder="Username" />
+          </div>
+        </div>
+
+        <!-- email -->
+
+        <div class="content-email">
+          <label for="email">Email</label>
+          <div class="input-email">
+            <i class="bi bi-envelope"></i>
+            <input type="email" id="email" placeholder="Email" />
+          </div>
+        </div>
+
+        <!-- Senha -->
+
+        <div class="content-senha">
+          <label for="senha">Senha</label>
+          <div class="input-senha">
+            <i class="bi bi-lock-fill"></i>
+            <input type="password" id="senha" placeholder="Password" />
+          </div>
+        </div>
+        <button type="submit">Cadastrar</button>
+      </form>
+
+      <div class="logos">
+        <img src="./img/html.png" alt="image html" class="img-html" />
+        <img src="./img/css.png" alt="image css" class="img-css" />
+        <img src="./img/js.png" alt="image js" class="img-js" />
+      </div>
+
+      <div class="whats">
+        <img
+          src="./img/whats2.png"
+          alt="whatsaap"
+          id="iwhats"
+          onclick="window.open('https://api.whatsapp.com/send?phone=5585996876246&text=Ol%C3%A1%20gostaria%20de%20mais%20informa%C3%A7%C3%B5es%20sobre%20o%20projeto')"
+        />
+      </div>
+    </main>
+
+    <script src="script.js"></script>
+  </body>
+</html>
