@@ -16,20 +16,46 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
-  background-image: linear-gradient(-135deg, #f88d46, #d15604);
+  background-image: linear-gradient(-20deg, #272757, #0f0f30);
+  flex-direction: row;
+}
+
+.transicao {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-image: linear-gradient(-135deg, #080813, #2d2d4b);
   flex-direction: row;
 }
 
 .titulo {
   margin-bottom: 25px;
+  margin-top: 15px;
+  color: #272757;
 }
 
-form {
-  background-color: rgb(241, 223, 206);
+.form-cadastro {
+  z-index: 100;
+  background-color: #a5a5c5;
+  align-items: center;
+  display: none;
+  flex-direction: column;
+  border-radius: 0px 5px 5px 0px;
+  width: 30%;
+  height: 449px;
+  padding: 40px;
+  box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.8);
+}
+
+.form-login {
+  z-index: 100;
+  background-color: #a5a5c5;
   align-items: center;
   display: flex;
   flex-direction: column;
-  border-radius: 5px;
+  border-radius: 5px 0px 0px 5px;
   width: 30%;
   height: auto;
   padding: 40px;
@@ -45,10 +71,13 @@ form {
 
 label {
   margin-left: 10px;
+  color: #272757;
 }
 .input-name,
 .input-email,
-.input-senha {
+.input-senha,
+.login-name,
+.login-senha {
   width: 100%;
   padding: 5px;
   margin: 5px;
@@ -59,7 +88,9 @@ label {
 
 #name,
 #email,
-#senha {
+#senha,
+#login-name,
+#login-senha {
   width: 100%;
   height: 20px;
   border: none;
@@ -68,20 +99,22 @@ label {
 
 input {
   outline: none;
-  caret-color: #d15604;
-  background-color: rgb(240, 225, 211); ;
+  caret-color: #272757;
+  background-color: #a5a5c5;
+  color: #272757;
+
 }
 
 i {
   margin-top: 2px;
-  color: #d15604;
+  color: #272757;
 }
 
-button {
+.btnSubmit {
   margin-top: 30px;
   border: none;
   width: 100%;
-  background-image: linear-gradient(-135deg, #e45f07, #f88d46);
+  background-image: linear-gradient(-500deg, #272757, rgb(44, 23, 28));
   padding: 15px;
   color: white;
   border-radius: 25px;
@@ -89,14 +122,56 @@ button {
   box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.3);
 }
 
+.btnCadastro {
+  margin-top: 15px;
+  border: none;
+  width: 100%;
+  background-image: linear-gradient(-500deg, #272757, rgb(44, 23, 28));
+  padding: 10px;
+  color: white;
+  border-radius: 25px;
+  font-size: 20px;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.3);
+}
+
+.container-button {
+  position: absolute;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+.btn-voltar {
+  bottom: 60px;
+  right: 130px;
+  position: relative;
+  margin-top: 30px;
+  border: none;
+  width: 120px;
+  background-image: linear-gradient(-500deg, #272757, rgb(44, 23, 28));
+  padding: 5px;
+  color: white;
+  border-radius: 25px;
+  font-size: 15px;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.3);
+}
+
+.btn-voltar:hover {
+  cursor: pointer;
+  background-image: linear-gradient(-500deg, rgb(44, 23, 28),rgb(75, 57, 61));
+  transition: all 0.2s ease-in-out;
+  transform: scale(1.05);
+}
+
 button:hover {
   cursor: pointer;
-  background-image: linear-gradient(-135deg, #f88d46, #d15604);
+  background-image: linear-gradient(-500deg, rgb(44, 23, 28),rgb(75, 57, 61));
   transition: all 0.2s ease-in-out;
   transform: scale(1.05);
 }
 
 .logos {
+  position: absolute;
   width: 20%;
   display: flex;
   flex-direction: column;
@@ -110,12 +185,16 @@ button:hover {
   height: auto;
   margin: 10px;
   margin-left: 150px;
+  position: relative;
+  right: 600px;
 }
 .img-css {
+  position: relative;
   width: 170px;
   height: auto;
   margin: 10px;
   margin-left: 150px;
+  right: 600px;
 }
 
 .whats {
@@ -137,4 +216,16 @@ button:hover {
 #iwhats:hover {
   transform: scale(0.9);
   transition: all 0.2s ease-in-out;
+}
+
+.img-montanha {
+  width: 330px;
+  height: auto;
+  margin-top: 5px;
+}
+
+#montanha {
+  width: 100%;
+  height: auto;
+  box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.8);
 }
